@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" type="text/css" href="estilos1.css"> 
     <meta charset="UTF-8">
     <title>mi primera pagina wed</title>
-</head>
+</head>">
 <body style="background-color: beige;">
     
 <nav id="inicio"> 
@@ -166,11 +167,11 @@
 
 <h2>Uso de formulario</h2>
 
-<form action="todo sobre mi persona" method="post">
+<form action="Untitled-1.html" method="post">
 
-<p> <label for="Nombre">Nombre: <input type="text" id="Nombre" required > </label></p>
-<p> <label for="Apellido">Apellido <input type="text" id="Apellido" id=""></label></p>
-<p>  <label for="edad">edad <input type="number" id="edad" min="10" max="80"></label></p>
+<p> <label for="Nombre">Nombre: <input type="text" id="Nombre" name="Nombre" required autofocus> </label></p>
+<p> <label for="Apellido">Apellido <input type="text" id="Apellido" name="apellido"></label></p>
+<p>  <label for="edad">edad <input type="number" id="edad" name="edad" min="10" max="80" required></label></p>
 
 <p> <label for="observaton">Obsevcion:
         <textarea name="observaton" id="observaton"
@@ -212,32 +213,59 @@
 
 <p> <label> Ciclo actual</label></p>
 
-<input type="scale: 1.5" type="radio" name="ciclo" value="primero" >
-  <label>primero</label><br>
-<input type="scale: 1.5" type="radio" name="ciclo" value="segundo">
-   <label>segundo</label> <br>
-<input type="sacle: 1,5" type="radio" name="ciclo" value="tercero">  
-   <label>tercero</label> <br>
-<input type="scale: 1.5" type="radio" name="ciclo" id="cuarto">
-   <label>cuarto</label> <br>
-<input type="scale: 1.5" type="radio" name="ciclo" id="quinto">
-   <label>quinto</label> <br>
-<input type="scale: 1.5" type="radio" name="ciclo" id="sexto">
-   <label>sexto</label>   <br>      
+<input style="scale: 1.5" type="radio" name="ciclo" value="primero" >
+  <label for="primero">primero</label><br>
+<input style="scale: 1.5" type="radio" name="ciclo" value="segundo">
+  <label for="segundo">segundo</label> <br>
+<input style="scale: 1.5" type="radio" name="ciclo" value="tercero">  
+  <label for="tercero">tercero</label> <br>
+<input style="scale: 1.5" type="radio" name="ciclo" id="cuarto">
+  <label for="cuarto">cuarto</label> <br>
+<input style="scale: 1.5" type="radio" name="ciclo" id="quinto">
+  <label for="quinto">quinto</label> <br>
+<input style="scale: 1.5" type="radio" name="ciclo" id="sexto">
+  <label for="sexto">sexto</label>   <br>      
 
 
 
+  <label for="fecha"> SELECCIONE FECHA:</label>
+  <input style="font-size:25px" type="date" maxlength="fecha" id="fecha"
+   name="fecha" min="2025-01-01" max="2026-12-31"> 
 
+<br> <br>
 
+<label for="clave" >contraseña: 
+    <input type="password" id="clave" name="clave" placeholder="8 a 12 caracteres" minlength="8" maxlength="12" >
+
+</label>
+<br><br>
+
+<label for="correo" >correo electronico: 
+    <input type="email" id="correo" name="correo" placeholder="@certus.edu.pe" pattern="+.[a-zA-Z0-0]+@certus\.edu\.pe">   </label>
+ <br><br>
+
+<label for="usuario">usuario
+    <input type="text" id="usuario" name="usuario" minlength="5" maxlength="40" pattern="[a-zA-Z0-0]+"  >
+</label>
+<br><br>
+ 
+<label for="resetear" >limpiar: 
+    <input type="reset" id="resetear" name="resetear"></label>
+<br><br>
+
+  <button type="submit" style="font-size: 25px;" >Enviar</button> 
+
+>
 
 
 
 
 </form>
 
-<br><br>
 
-<button type="submit" style="font-size: 25px;" >Enviar</button> 
+
+
+
 
 
 

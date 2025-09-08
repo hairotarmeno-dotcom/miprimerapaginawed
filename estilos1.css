@@ -1,0 +1,18 @@
+/* archivo externo linkeado a Untitled-1.html */
+
+
+h2{
+    text-align: center; 
+    font-size: 35px;
+    background-color:  chartreuse; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-style: italic;
+}
+
+table{
+    text-align: center; 
+    font-size: 35px;
+    background-color:  chartreuse; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-style: italic;
+}
