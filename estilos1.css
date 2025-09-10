@@ -16,3 +16,28 @@ table{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-style: italic;
 }
+
+div{
+    color: hotpink;
+    background-color: blueviolet;
+}
+
+div p{ /*estilo solo para cualquier parrafo dentro de algun div*/
+    font-size: 50px;
+    color: cadetblue;
+}
+/*colocar estilo tamaño 25px solo para label que estan dentro de algun parrafo*/
+
+label p {
+    font-size: 25px;
+
+}
+
+
+/*colocar estilo tamaño 30px solo para input que estan dentro de algun label*/
+
+input {
+    font-size: 30px;
+         
+
+}
