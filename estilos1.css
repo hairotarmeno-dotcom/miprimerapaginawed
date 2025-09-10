@@ -12,7 +12,7 @@ h2{
 table{
     text-align: center; 
     font-size: 35px;
-    background-color:  chartreuse; 
+    background-color:  rgb(17, 0, 255); 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-style: italic;
 }

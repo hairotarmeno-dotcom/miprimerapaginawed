@@ -29,11 +29,11 @@ section {
 
     
 }
-aside {
-    flex: 0;
+
+aside {flex: 0;
     background-color: #99a7d6;
     padding: 50px;
-    width: ;: 70px;
+    width: 70px;
     height: 180px
 
 }
