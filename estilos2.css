@@ -67,3 +67,254 @@ article {
 .margen_imagen {
     margin-right: 20px;
 }
+
+.aside_imagenes {
+    background-color: white;
+}
+
+.color_link {
+  color:rgb(18, 16, 136) ;
+
+}
+
+.color_link:hover {
+    color:rgb(136, 84, 16) ;
+   background-color: yellow;
+  }
+
+  
+.primera_letra {
+   color: darkblue;
+
+}
+
+.primera_letra::first-letter {
+    color: rgb(138, 10, 10);
+    font-size: 150%;
+ 
+ }
+ 
+
+ .clase_static {
+    font-size: 20px;
+    background-color: aqua;
+    position: static;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 200px;
+ }
+ 
+ .clase_static2 {
+    font-size: 20px;
+    background-color: aqua;
+    position: static;
+    top: 20px;
+    left: 80px;
+    right: 200px;
+ }
+
+
+.clase_Relative{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+.clase_Relative:hover {
+    position:relative; 
+    margin-top: 100px;   /* si colocas margin se acomoda, no superpone*/
+    margin-left: 100px;
+   
+   
+}
+
+
+
+ .clase_relative_index{
+    font-size: 20px;
+    background-color: #99a7d6;
+    height: 250px;
+    width: 200px;
+}
+.clase_relative_index:hover{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: -10;
+}
+
+.clase_Absolute {
+    font-size: 20px;
+    background-color: #99a7d6;
+    height: 170px;
+    width: 180px;
+    position:absolute;
+    top: 15px;
+    left: 700px;
+
+}
+
+.clase_Relative2 {  /*esta clase es para interactuar con clase absolute */
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+    position:relative;
+  }
+
+.clase_AbsoluteRelative {
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    bottom: 200px;
+    left: 800px;
+    z-index: 5;
+ }
+
+ 
+ .clase_Fixed {
+    height: 500px;
+    width: 400px;
+    position: fixed;
+    left: 400px;
+    bottom: 0px;
+    z-index: -5;  /* atras del texto */
+
+ }
+ .marca_agua {
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 999;
+ }
+
+ .clase_Sticky {
+    height: 200px;
+    font-size: 40px;
+    position: sticky;
+    left: 40px;
+    top: 0px;
+   
+
+ }
+
+
+ .class_float_right2{
+    float:right;
+    background-color: aqua;
+    margin: 5px;
+
+
+ }
+ 
+.tiponone { /*estilo display none */
+    
+    background-color: blue;
+    font-size: 20px;
+    margin: 20px;
+    color:aquamarine;
+    display:none;
+  }
+  .tipohidden { /*estilo display hidden */
+        
+    background-color: blue;
+    font-size: 20px;
+    margin: 20px;
+    color:aquamarine;
+    visibility: hidden;
+  }
+
+.enlinea {    /* display tipo inline */
+    background-color: red;
+    display:inline;
+    font-size: 30px;
+    margin: 2px;
+    color: beige;
+    width: 800px;    /* width ni height funcionan en inline*/
+    height: 1000px;
+}
+
+.tipoinlineblock {
+    background-color: red;
+    display:inline-block;
+    font-size: 30px;
+    margin: 10px;
+    color: rgba(228, 228, 9, 0.884);
+    width: 200px;    /* width y height si funcionan en inline-block*/
+    height:100px;
+
+}
+
+
+.tipoflex {
+    background-color: rgb(154, 154, 197);
+    font-size: 20px;
+    margin: 20px;
+    color:rgb(0, 17, 11);
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 15px; /* Espacio entre celdas */
+}
+
+.item img {
+     max-width: 100%; /* Para que no se desborde */
+}
+
+.item {
+ display: flex;
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
+  font-size: 30px;
+   justify-content: center;  /* Centrar horizontalmente */
+  align-items: center;      /* Centrar verticalmente */
+}
+
+.claseNav{
+    background-color: greenyellow;
+    font-size: 30px;
+    padding-inline: 0px;
+    color: black;
+    display: inline;
+    list-style-type: none ;
+}
+
+.classeNav:hover{
+    background-color: chocolate;
+}
+
+.claseNav ul {
+    list-style-type: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.claseNav li a {
+    text-decoration: none;
+    padding: 6px 11px;
+    display: block; 
+}
+
+.claseNav >li{
+    float: left;
+}
+
+.claseNav li ul {
+    display:none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.claseNav li:hover>ul {
+    display: block;
+}
