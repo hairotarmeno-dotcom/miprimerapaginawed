@@ -1,0 +1,76 @@
+let varGlobal="Esta es una variable global";
+window.vTexto1="";
+
+
+function FCambioColor() {
+ 
+        vTexto1 =document.getElementById("ejmDOM1");
+
+        vTexto1.textContent="TExto cambiado por funcion FCambioColor()";
+        vTexto1.style.color="red";
+        vTexto1.style.background="darkblue";
+        vTexto1.insertAdjacentHTML("afterend", "texto adicional <br> <br>");
+        console.log("Texto por consola");
+
+}
+
+function FCambioClase1() {
+    let vTexto2=document.getElementsByClassName("classDOM1");
+    vTexto2[1].innerHTML="Elemto [1] del arreglo \n de clase classDOM1";
+    vTexto2[1].style.color="cyan";
+
+    vTexto2[0].innerHTML="Elemento [0] del arreglo" + 
+                        "de clase classDOM1 ; concatenado con global: " + varGlobal +
+                        "\n y su tipo de variable es:" + typeof(varGlobal);
+
+    vTexto2[2].innerHTML="Tamaño del arrey=" + vTexto2.length + 
+                        "\n y su tipo de variable es:"+ typeof(vTexto2);
+
+
+
+}
+
+function FCambioTag1() {
+    let vTexto3=document.getElementsByTagName('h2');
+    vTexto3[0].innerHTML="Elemento h2 cambiado por tagDOM1";
+    vTexto3[19].innerHTML="Elemento ultimo h2 cambiado por tagDom1";
+    vTexto3[19].style.color="magenta";
+    varGlobal="variable global modificada";
+
+      vTexto3[19].innerHTML= `tipo de variable de la varGlobal es: ${typeof(varGlobal)} `;
+    
+}
+
+function FCrear1() {
+    let vLista=document.getElementById("ejmDOM1");
+    vLista.style.backgroundColor="white"
+    vLista.innerHTML="  <ul align='right'  style='color:rgb(47, 59, 34)'> " + 
+                    " <li>Capacidad de atencion</li> " +
+                    " <li>Consultar dudas no resueltas</li> " +
+                    " <li>Repasar temas y realizar tareas en casa</li>" +
+                " </ul> ";
+   
+}
+
+
+function FAgregarTextoPermanente() {
+    let vTexto4=("<br>   <p style='font-size:18px;'> Texto Agragodo con concatenacion permanente </p> ");
+    vTexto1.innerHTML=vTexto1.innerHTML+vTexto4;
+    
+}
+
+
+function FCrearElemento() {
+    var vElemento = document.getElementById("complementario1");
+
+    var nuevoH3= document.createElement("h3");
+    var texto= document.createTextNode("deporte favorito: futboll");
+    nuevoH3.appendChild(texto);
+    vElemento.appendChild(nuevoH3);
+
+    var nuevoInputext= document.createElement("input");
+        nuevoInputext.type="text";
+
+    vElemento.appendChild(nuevoInputext);
+        
+}

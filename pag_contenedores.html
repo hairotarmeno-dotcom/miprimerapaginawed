@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> TIENDA VIRTUAL CALZADOS </title>
     <link rel="stylesheet" type="text/css" href="estilos2.css">
-    <style>
-        
-    </style>
+    <script type="text/javascript"  src="script1.js" ></script>
 </head>
 <body>
 
@@ -125,7 +123,8 @@
 
 <section>  
 
- <article>  <h2>POSICIONAMIENTO</h2>
+ <article>  
+    <h2>POSICIONAMIENTO</h2>
    <br>
      <h2>POSICIONAMIENTO STATIC</h2>
 
@@ -365,7 +364,8 @@ soberanía e integridad territorial de la República.
 </section>
 
 <section>
-   <article> <h2>JAVASCRIPT</h2>
+   <article> 
+    <h2>JAVASCRIPT</h2>
        <div style="font-size: 30px;"> contenedor resultado en JAVASCRIPT
            <div id="resultado" style="font-size:30px;">
                <p>Operacion suma</p>
@@ -384,11 +384,49 @@ soberanía e integridad territorial de la República.
         document.getElementById('resultado'). innerHTML= 
         " <br> Elvalor de la suma de "+valor1+" con "+valor2+" es :"+suma+ "<br>"
         + "El valor de la resta de "+valor1+" con "+valor2+" es ;"+resta;       
+        
+        document.write("  <ul align='right'  style='color:rgb(47, 59, 34)'> " + 
+                " <li>Capacidad de atencion</li> " +
+                    " <li>Consultar dudas no resueltas</li> " +
+                    " <li>Repasar temas y realizar tareas en casa</li>" +
+                " </ul> ") ;
+        
+                <button style="font-size: 30px;" onclick="FCrear1()">  Crear lista de viñetas </button>
+
+
+                
+
         </script>
 
 
    </article>
   
+<h3 style="font-size: 30px ;"> EJENPLO DE MANUPULAICON DE DE DOM </h3>
+   <p  id="ejmDOM1"  style="font-size: 30px ;"> Primer texto a aplicar DON </p>
+
+   <p  class="classDOM1" style="font-size: 30px;">Texto1 a aplaicar DOM medante clase</p>
+
+   <p  class="classDOM1" style="font-size: 30px;">Texto2 a aplicar DOM medante clase</p>
+
+   <h2  class="classDOM1" style="font-size: 30px;">Texto3 a aplaicar DOM medante TAG</h2>
+   
+
+<button style="font-size: 30px;" onclick="FCambioColor()">  CAMBIAR COOR por ID </button>
+<button style="font-size: 30px;" onclick="FCambioClase1()">  CAMBIAR por CLASE </button>
+<button style="font-size: 30px;" onclick="FCambioTag1()">  CAMBIAR por tag h2 </button>
+<button style="font-size: 30px;" onclick="FCrear1()">  Crear lista de viñetas </button>
+<button style="font-size: 30px;" onclick="FAgregarTextoPermanente()" >Agregar texto a primera variable</button>
+
+<h2 style="font-size: 40px;" >Creacion de elementos en linea</h2> <br>
+
+<button style="font-size: 30px;" onclick="FCrearElemento()" >crear elemento</button>
+
+<div id="complementario1">Datos complementarios del estudiante: <br> </div>
+
+
+
+
+
 
 </section>
 
