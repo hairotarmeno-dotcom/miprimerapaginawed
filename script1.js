@@ -75,20 +75,28 @@ function FCrearElemento() {
         
 }
 
+function Fqueryselector1(){
+    var vObjetitoClass= document.querySelector(".classDOM1");
+    vObjetitoClass.innerHTML="Texto cambiado por querey selector a la clase primer indice[0]";
 
+    var vObjetoId= document.querySelector("#ejmDOM1");
+    vObjetoId.style.color="yellow";
 
+    var vObjetoTagh2= document.querySelector("h2");
+    vObjetoTagh2.style.textAlign="center"
+}
 
 
 function FUsoFor1() {
     const vTestoClass = document.getElementsByClassName("classFOR1");
-    var  texto= "";
-
-    for(let i=0 ; i< vTextoClass.length; i++)
-    {
-        vTextoClass[i].style.border ="2px solid red";
-        vTextoTotal=vTextoTotal + vTestoClass[i].innerText+ '-';
-    }    
-
+    var  vTextoTotal="";
+   for(let i =0 ; i< vTextoClass.length; i++)
+                  {
+                  vTextoClass[i].style.border="2px solid yellow";
+                  vTextoTotal=vTextoTotal + vTextoClass[i].innerText+ '-';
+                  }
+                  
+   
     var nuevoH1 =document.createElement("h1");
     var text =document.createTextNode(vTextoTotal);
     nuevoH1.appendChild(texto);
