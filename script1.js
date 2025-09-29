@@ -74,3 +74,45 @@ function FCrearElemento() {
     vElemento.appendChild(nuevoInputext);
         
 }
+
+
+
+
+
+function FUsoFor1() {
+    const vTestoClass = document.getElementsByClassName("classFOR1");
+    var  texto= "";
+
+    for(let i=0 ; i< vTextoClass.length; i++)
+    {
+        vTextoClass[i].style.border ="2px solid red";
+        vTextoTotal=vTextoTotal + vTestoClass[i].innerText+ '-';
+    }    
+
+    var nuevoH1 =document.createElement("h1");
+    var text =document.createTextNode(vTextoTotal);
+    nuevoH1.appendChild(texto);
+    vTextoClass[3].appendChild(nuevoH1);
+
+}
+
+function FUsoForEach1() {
+    const vTestoClass = document.querySelectorAll(".classFOR1")
+    var  texto= "";
+
+    vTextoclass.forEach
+    ( iter=>
+    {
+        iter.style.border ="2px solid green";
+        vTextoTotal=vTextoTotal + iter.innerText+ '-';
+    }    
+);
+    var nuevoH1 =document.createElement("h1");
+    var text =document.createTextNode(vTextoTotal);
+    nuevoH1.appendChild(texto);
+    vTextoClass[3].appendChild(nuevoH1);
+    
+
+}
+
+
