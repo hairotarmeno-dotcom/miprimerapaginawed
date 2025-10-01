@@ -167,11 +167,12 @@
 
 <h2>Uso de formulario</h2>
 
-<form action="Untitled-1.html" method="post">
+<form action="todosobremipersona.html" method="post">
 
-<p> <label for="Nombre">Nombre: <input type="text" id="Nombre" name="Nombre" required autofocus> </label></p>
-<p> <label for="Apellido">Apellido <input type="text" id="Apellido" name="apellido"></label></p>
-<p>  <label for="edad">edad <input type="number" id="edad" name="edad" min="10" max="80" required></label></p>
+<p> <label for="Nombre">Nombre: <input type="text" id="Nombre" name="Nombre" class="datospersonales"  required autofocus> </label></p>
+<p> <label for="Apellido">Apellido <input type="text" id="Apellido" name="apellido" class="datospersonales"></label></p>
+<p>  <label for="edad">edad <input type="number" id="edad" name="edad" min="10" max="80" class="datospersonales" required></label></p>
+
 
 <p> <label for="observaton">Obsevcion:
         <textarea name="observaton" id="observaton"
@@ -179,7 +180,6 @@
     </textarea>
 
 </label></p>
-
 
 <p>
 
@@ -219,11 +219,11 @@
   <label for="segundo">segundo</label> <br>
 <input style="scale: 1.5" type="radio" name="ciclo" value="tercero">  
   <label for="tercero">tercero</label> <br>
-<input style="scale: 1.5" type="radio" name="ciclo" id="cuarto">
+<input style="scale: 1.5" type="radio" name="ciclo" value="cuarto">
   <label for="cuarto">cuarto</label> <br>
-<input style="scale: 1.5" type="radio" name="ciclo" id="quinto">
+<input style="scale: 1.5" type="radio" name="ciclo" value="quinto">
   <label for="quinto">quinto</label> <br>
-<input style="scale: 1.5" type="radio" name="ciclo" id="sexto">
+<input style="scale: 1.5" type="radio" name="ciclo" value="sexto">
   <label for="sexto">sexto</label>   <br>      
 
 
@@ -251,11 +251,13 @@
  
 <label for="resetear" >limpiar: 
     <input type="reset" id="resetear" name="resetear"></label>
-<br><br>
-
+<br>
   <button type="submit" style="font-size: 25px;" >Enviar</button> 
 
->
+
+
+
+
 </form>
 
 

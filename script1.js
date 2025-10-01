@@ -87,40 +87,84 @@ function Fqueryselector1(){
 }
 
 
-function FUsoFor1() {
-    const vTestoClass = document.getElementsByClassName("classFOR1");
-    var  vTextoTotal="";
-   for(let i =0 ; i< vTextoClass.length; i++)
-                  {
-                  vTextoClass[i].style.border="2px solid yellow";
-                  vTextoTotal=vTextoTotal + vTextoClass[i].innerText+ '-';
-                  }
-                  
-   
-    var nuevoH1 =document.createElement("h1");
-    var text =document.createTextNode(vTextoTotal);
-    nuevoH1.appendChild(texto);
-    vTextoClass[3].appendChild(nuevoH1);
+function FUsoFor1()
+{
+  const vTextoClass = document.getElementsByClassName("classFOR1");
+  var vTextoTotal="";
+  // como length=4 --> ira desde 0 hasta 3
+  for(let i=0 ; i< vTextoClass.length ; i++ )
+  {
+    vTextoClass[i].style.border ="2px solid red" ;
+    vTextoTotal = vTextoTotal + vTextoClass[i].innerText+'-';
 
-}
+  } // fin de for
+  var nuevoH1 =document.createElement("h1");
+  var texto = document.createTextNode(vTextoTotal);
+  nuevoH1.appendChild(texto);
+  vTextoClass[3].appendChild(nuevoH1);
+  
+}  // fin de function
 
-function FUsoForEach1() {
-    const vTestoClass = document.querySelectorAll(".classFOR1")
-    var  texto= "";
-
-    vTextoclass.forEach
-    ( iter=>
+function FUsoForEach1()
+{
+  const vTextoClass = document.querySelectorAll(".classFOR1");
+  var vTextoTotal="";
+  // como length=4 --> ira desde 0 hasta 3
+  vTextoClass.forEach
+  ( iter=>
     {
-        iter.style.border ="2px solid green";
-        vTextoTotal=vTextoTotal + iter.innerText+ '-';
-    }    
-);
-    var nuevoH1 =document.createElement("h1");
-    var text =document.createTextNode(vTextoTotal);
-    nuevoH1.appendChild(texto);
-    vTextoClass[3].appendChild(nuevoH1);
-    
+      iter.style.border ="2px solid blue" ;
+      vTextoTotal = vTextoTotal + iter.innerText+'-';
+    }
+  );
+}
+  
+function FEliminarConcat() {
+    const vTextoClass = document.getElementsByClassName("classFOR1");
+    let rpta =prompt("Estas seguro de eliminar el texto concatenacion? (S/N)", '');
+    if (rpta== "S" || rpta== "s") //
+     {
+         let rpta2 =prompt("ingerse el numero de fila a eliminar", '');
+    if(rpta2 >=0 && rpta2< vTextoClass.length)
+    {
+    vTextoClass [rptra2].remove();
+    alert("CONCATENACION ELEMINADA");  
+    }
+    else 
+    {
+    alert("INCORRECTO, no existe esa fila");
+    }
 
+     }
+     else
+      { if(rpta=="N" || rpta=="n")
+      { alert("NO SE ELIMINARA");
+      }
+      else 
+      {alert("OPCION INCORRECTA-INgresa nuevamente"); 
+      }
+      }
 }
 
+function FCapturarNombre() {
 
+const vTexto1 = document.getElementById("Nombre");
+const vTexto2 = document.querySelectorAll("input.datospersonales");
+const vTexto3 = document.getElementById("clave");
+const vTexto4 = document.getElementsById("Apellido")
+
+vTexto1.style.color="red";
+
+var valor1 =vTexto1.Value;
+var valor2 ="";
+vTexto3.value=valor1;
+
+
+vTexto2.forEach(input =>{
+    valor2 = valor2 +  ` ${input.name}: ${input.value}: ${input.id} \n`;
+     input.style.border="2px solid orange";
+     } );
+
+ vTexto2[1].style.backgroundColor="green";
+ document.getElementById('observaton').value = valor2;
+}

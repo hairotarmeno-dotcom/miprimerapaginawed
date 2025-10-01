@@ -439,12 +439,103 @@ soberanía e integridad territorial de la República.
 <button style="font-size: 25px;" onclick="FUsoForEach1()" >reporte de classFOR1</button>
 <button style="font-size: 25px;" onclick="FEliminarConcat()" >Eleminar concatenacion</button>
 
-
-
-
-
 </article>
 
+<article>
+    <h2>uso de JAVASCRIPT en formulario </h2>
+        <form action="todosobremipersona.html" method="post">
+
+            <p> <label for="Nombre">Nombre: <input type="text" id="Nombre" name="Nombre" class="datospersonales"required autofocus > </label></p>
+            <p> <label for="Apellido">Apellido <input type="text" id="Apellido" name="apellido" class="datospersonales"></label></p>
+            <p> <label for="edad">edad <input type="number" id="edad" name="edad" min="10" max="80" class="datospersonales" required></label></p>
+            
+            <p> <label for="observaton">Obsevcion:
+                    <textarea name="observaton" id="observaton"
+                    style="height: 180px; width: 200px; font-size: 25px;">
+                </textarea>
+            
+            </label></p>
+            
+            
+            <p>
+            
+                <label for="estatura">estatura
+                <select name="grupoestatura" id="estatura">
+                    <option value="selecciones">selecciones</option>
+                    <option value="menor de 1.50m">menor de 1.50m</option>
+                    <option value="de 1.50 a 1.59">de 1.50 a 1.59</option>
+                    <option value="de 1.60 a 1.69">de 1.60 a 1.69</option>
+                    <option value="mayor o igual a 1.70">mayor o igual a 1.70</option>
+            
+                </select>
+            </label>
+            </p>
+            
+            
+            
+            <p><label> curso llevados</label> <br>
+            
+            <input type="checkbox" name="curso" value="matematica"id="matematica">
+            <label for="matematica">Matematica</label> <br>
+            <input type="checkbox" name="curso" value="lenguaje dss" id="ldss">
+                <label for="ldss">lenguaje dss</label> <br>
+            <input type="checkbox" name="cursos" value="introducon investigacion" id="intro_inv">
+                <label for="intro_inv">introducon investigacion</label> <br>
+            <input type="checkbox" name="curso" value="nuevas tendencas" id="nuevas_tendencias">
+                <label for="nuevas_tendencias"> Nuevas tendendicas</label> <br>
+            
+            
+            <hr style="border: rebeccapurple;">
+            
+            <p> <label> Ciclo actual</label></p>
+            
+            <input style="scale: 1.5" type="radio" name="ciclo" value="primero" >
+            <label for="primero">primero</label><br>
+            <input style="scale: 1.5" type="radio" name="ciclo" value="segundo">
+            <label for="segundo">segundo</label> <br>
+            <input style="scale: 1.5" type="radio" name="ciclo" value="tercero">  
+            <label for="tercero">tercero</label> <br>
+            <input style="scale: 1.5" type="radio" name="ciclo" value="cuarto">
+            <label for="cuarto">cuarto</label> <br>
+            <input style="scale: 1.5" type="radio" name="ciclo" value="quinto">
+            <label for="quinto">quinto</label> <br>
+            <input style="scale: 1.5" type="radio" name="ciclo" value="sexto">
+            <label for="sexto">sexto</label>   <br>      
+            
+            
+            
+            <label for="fecha"> SELECCIONE FECHA:</label>
+            <input style="font-size:25px" type="date" maxlength="fecha" id="fecha"
+            name="fecha" min="2025-01-01" max="2026-12-31"> 
+            
+            <br> <br>
+            
+            <label for="clave" >contraseña: 
+                <input type="password" id="clave" name="clave" placeholder="8 a 12 caracteres" minlength="8" maxlength="12" >
+            
+            </label>
+            <br><br>
+            
+            <label for="correo" >correo electronico: 
+                <input type="email" id="correo" name="correo" placeholder="@certus.edu.pe" pattern="+.[a-zA-Z0-0]+@certus\.edu\.pe">   </label>
+            <br><br>
+            
+            <label for="usuario">usuario
+                <input type="text" id="usuario" name="usuario" minlength="5" maxlength="40" pattern="[a-zA-Z0-0]+"  >
+            </label>
+            <br><br>
+            
+            <label for="resetear" >limpiar: 
+                <input type="reset" id="resetear" name="resetear"></label>
+            <br><br>
+            
+            <button type="submit" style="font-size: 25px;" >Enviar</button> 
+        <br>
+
+        <button style="font-size: 18px;" type="button" onclick="FCapturarNombre()" >Copiar datos a observaciones</button>
+</article>
+
+</form>
 
 </section>
 
