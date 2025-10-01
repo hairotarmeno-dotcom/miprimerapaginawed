@@ -88,28 +88,24 @@
     <input type="text" id="txt2" class="input-text" placeholder="Texto 2">
     <input type="text" id="txt3" class="input-text" placeholder="Texto 3">
   </div>
-
   <!-- numero de entrada -->
   <div>
     <label for="cantidad">Cantidad: </label>
     <input type="number" id="cantidad" min="1" value="1">
   </div>
-
   <!-- el texto -->
   <textarea id="resultado" rows="5" placeholder="Aquí se mostrará el resultado..."></textarea>
-
   <!-- Casillas de verificación -->
-  <div class="checkbox-group">
-    <input type="checkbox" id="c1" name="extras" class="chk"> Opción 1
-    <input type="checkbox" id="c2" name="extras" class="chk"> Opción 2
-    <input type="checkbox" id="c3" name="extras" class="chk"> Opción 3
-  </div>
+  <div class="selection-opciones" >
+    <!--casillas de check-->
+       <input type="checkbox" id="c1" name="extras" class="chk"> opcion1
+       <input type="checkbox" id="c2" name="extras" class="chk"> opcion2
+       <input type="checkbox" id="c3" name="extras" class="chk"> opcion3
+<!--botones de opcion-->
+       <input type="radio" id="r1" name="option" class="radio"> opcion A
+       <input type="radio" id="r2" name="option" class="radio"> opcion B
+       <input type="radio" id="r3" name="option" class="radio"> opcion C   
 
-  <!--botones de opcion -->
-  <div class="radio-group">
-    <input type="radio" id="r1" name="opcion" class="radio"> Opción A
-    <input type="radio" id="r2" name="opcion" class="radio"> Opción B
-    <input type="radio" id="r3" name="opcion" class="radio"> Opción C
   </div>
 
   <!-- Botones -->
@@ -125,6 +121,12 @@
   <h2 id="ids"></h2>
   <h2 id="conteo"></h2>
  
+
+  <div class="palabra-clave" >
+    <label for="cajas">ingresala palabra</label>
+    <input type="text" >
+
+</div>
 
 
 

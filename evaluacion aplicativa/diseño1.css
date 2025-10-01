@@ -66,12 +66,11 @@ input, select {
       display: block;
       width: 100%;
       padding: 12px;
-      background: #db7929;
+      background: #29db73;
       color: white;
       border: none;
       border-radius: 6px;
       font-size: 16px;
-      cursor: pointer;
     }
 .btn:hover {
       background: #2ecc71;
@@ -114,22 +113,15 @@ input, select {
   resize: none; /* Evita cambiar el tamaño */
 }
 
-/* Checkboxes */
-.checkbox-group {
-  margin: 15px 0;
+.selection-opciones {
+  background: none;
 }
 
-.checkbox-group .chk {
-  margin-right: 5px;
-  accent-color: #28a745; /* Color verde al marcar */
-}
-
-/* Radios */
-.radio-group {
-  margin: 10px 0;
-}
-
-.radio-group .radio {
-  margin-right: 5px;
-  accent-color: #007BFF; /* Azul al seleccionar */
+.palabra-clave {
+  width: 30%;
+  padding: 0%;
+  height: 23px;
+  font-size: 18px;
+    
+   
 }
