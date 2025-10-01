@@ -6,22 +6,27 @@
     <title>Registro</title>
     <link rel="stylesheet" type="text/css" href="diseño.css">
 </head>    
-<body>
-<article>
-    <h2> Registrate en este sitio </h2>
+<body>   
+  <div class="formulario"> 
+    <h1>Registrate en este sitio</h1>
+     <form method="post">
+        <div class="usarname">
+            <label> Nombre de usuario </label> 
+            <input type="text"  minlength="3" maxlength="9" pattern="[a-zA-Z0-0]+" required> 
+        </div> <br>
+    <div class="usarname" >
+        <label > Contraseña</label> 
+        <input type="password"   placeholder="8 a 12 caracteres" minlength="8" maxlength="12" required>
+    </div>       
+    <br>
+    <p>  Recibirás confirmación del registro por correo electrónico </p>
+          <div>
+            <a href="tiendaC.html" class="boton-redireccion" >Registrarse</a>
+         </div>
+    
 
-    <p>Nobre de usuario </p>
-    <label for="usuario">
-        <input type="text" id="usuario" name="usuario" minlength="5" maxlength="30" pattern="[a-zA-Z0-0]+">
-    </label>
 
-    <p>contraseña</p>
-    <label for="clave">
-        <input type="password" id="clave" name="clave"  minlength="3" maxlength="9">
-    </label>
-<br> <br>
-     </article>
-   
+</form>
 </div>
 
 

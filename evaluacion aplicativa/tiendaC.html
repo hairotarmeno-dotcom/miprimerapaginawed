@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<meta><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseño1.css">
+      <script type="text/javascript"  src="calculo.js" ></script>
+    <title>tienda de camisa</title>
+</head>
+<body>
+<div id="container"> <!--nombre de la tienda y logo-->
+   
+
+    <header> 
+     <h1> Classic Shirts </h1>
+      <img src="logodetienda.png" alt="logo de tienda" class="imagen" width="100px" >
+   </header>
+
+    <table>
+    <tr>
+      <th>Foto</th>
+      <th>Nombre</th>
+      <th>Talla</th>
+      <th>Precio</th>
+    </tr>
+    <tr>
+      <td><img src="camisa1.jpg" width="80"></td>
+      <td>camisa verde</td>
+      <td>M</td>
+      <td class="precio">20</td>
+    </tr>
+    <tr>
+      <td><img src="camisa2.jpg" width="80"></td>
+      <td>camisa celeste</td>
+      <td>L</td>
+      <td class="precio">25</td>
+    </tr>
+    <tr>
+      <td><img src="camisa3.jpg" width="80"></td>
+      <td>Camisa Azul</td>
+      <td>S</td>
+      <td class="precio">22</td>
+    </tr>
+    <tr>
+      <td><img src="camisa4.jpg" width="80"></td>
+      <td>Camisa jean </td>
+      <td>XS</td>
+      <td class="precio">18</td>
+    </tr>
+    <tr>
+      <td><img src="camisa5.jpg" width="80"></td>
+      <td>Camisa Azul oscuro</td>
+      <td>XL</td>
+      <td class="precio">30</td>
+    </tr>
+  </table>
+
+  <h2>Formulario de Pedido</h2>
+  <form action="confirmacion.html" method="post">
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="direccion">Dirección de Entrega:</label>
+    <input id="direccion" name="direccion" required></input>
+
+    <label for="producto">Selecciona un Producto:</label>
+    <select id="producto" name="producto">
+      <option>Camisa verde - 20</option>
+      <option>camisa celeste - 25</option>
+      <option>Camisa Azul - 22</option>
+      <option>Camisa jean - 18</option>
+      <option>Camisa Azul oscuro - 30</option>
+    </select>
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+    <button type="submit" class="btn">Enviar Pedido</button>
+  </form>
+
+   <!-- entradas de texto -->
+  <div>
+    <input type="text" id="txt1" class="input-text" placeholder="Texto 1">
+    <input type="text" id="txt2" class="input-text" placeholder="Texto 2">
+    <input type="text" id="txt3" class="input-text" placeholder="Texto 3">
+  </div>
+
+  <!-- numero de entrada -->
+  <div>
+    <label for="cantidad">Cantidad: </label>
+    <input type="number" id="cantidad" min="1" value="1">
+  </div>
+
+  <!-- el texto -->
+  <textarea id="resultado" rows="5" placeholder="Aquí se mostrará el resultado..."></textarea>
+
+  <!-- Casillas de verificación -->
+  <div class="checkbox-group">
+    <input type="checkbox" id="c1" name="extras" class="chk"> Opción 1
+    <input type="checkbox" id="c2" name="extras" class="chk"> Opción 2
+    <input type="checkbox" id="c3" name="extras" class="chk"> Opción 3
+  </div>
+
+  <!--botones de opcion -->
+  <div class="radio-group">
+    <input type="radio" id="r1" name="opcion" class="radio"> Opción A
+    <input type="radio" id="r2" name="opcion" class="radio"> Opción B
+    <input type="radio" id="r3" name="opcion" class="radio"> Opción C
+  </div>
+
+  <!-- Botones -->
+  <div class="botones">
+    <button onclick="calcularTotal()">Calcular Precio Total</button>
+    <button onclick="mostrarIDs()">Mostrar IDs Inputs</button>
+    <button onclick="contarInputs()">Contar Inputs</button>
+    <button onclick="descuentoRecargo()">Descuento/Recargo</button>
+  </div>
+
+  <!-- Resultados -->
+  <h2 id="total"></h2>
+  <h2 id="ids"></h2>
+  <h2 id="conteo"></h2>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+    
+
+
+
+
+
+</body>
+</html>
